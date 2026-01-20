@@ -204,10 +204,10 @@
             transition: background-color 0.2s, transform 0.1s;
         }
 
-        /* Corrigido: Seletor para .fot com propriedades para exibir a imagem */
+        /* Corrigido: Seletor para .fot com propriedades para exibir a imagem sem distorção */
         .fot {
             background-image: url('FGD.png');
-            background-size: cover;
+            background-size: contain; /* Mantém a proporção original da imagem sem distorcer */
             background-repeat: no-repeat;
             background-position: center;
             height: 550px; /* Altura definida para a div aparecer */
@@ -337,7 +337,7 @@
         </header>
 
         <div class="fot">
-            <!-- Div vazia, mas agora com CSS corrigido para exibir a imagem -->
+            <!-- Div vazia, mas agora com CSS corrigido para exibir a imagem sem distorção -->
         </div>
 
         <section class="section">
